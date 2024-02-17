@@ -205,18 +205,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 <b>🏷 Title</b>: <a href={url}>**{title}**</a>
 **🎭 Genres: {genres}**
 📆** Year: <a href={url}/releaseinfo>{year}</a>**
-🌟** Rating: <a href={url}/ratings>{rating}</a>/10</b>**
-➖➖➖➖➖➖➖➖➖➖
-📥 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙇𝙞𝙣𝙠 📥   
-**अपना पसंदीदा `{qurey}`
-फिल्म का नाम **<a href='https://t.me/+Az_CHIVozrVjMWI1'>𝐂𝐨𝐦𝐦𝐞𝐧𝐭 𝐁𝐨𝐱</a> **में लिखे !** 👇
-➖➖➖➖➖➖➖➖➖➖
-**TAP TO COPY** 👉 `{qurey}`
-
-📜 :<a href='https://t.me/+Az_CHIVozrVjMWI1'>**comment Box**</a>
-
-📥  :<a href='https://t.me/mxmoder_video_download/5'>**How To Download {qurey} movie**</a>
-➖➖➖➖➖➖➖➖➖➖➖"""
+🌟** Rating: <a href={url}/ratings>{rating}</a>/10</b>**"""
     
     ALL_FILTERS = """
 <b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
