@@ -1998,8 +1998,11 @@ async def auto_filter(client, msg, spoll=False):
             settings = await get_settings(message.chat.id)
             if not files:
                 await client.send_message(req_channel, f"#REQUESTERS_LOGS \n\n**CONTENT NAME:**`{search}`\n**REQUESTED BY :** {message.from_user.first_name}\n**USER ID :**{message.from_user.id}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌺 Mark as Done 🏵️", callback_data="close_data")]]))
-                l = await message.reply_text(text=f"Hello **{message.from_user.first_name}** 😎. \n\n  `{search}` movie will be uploaded some time \n\n Join the **UPCOMING MOVIE** channel given below and keep notification \n\n ❤️Thank You❤️ " ,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('UPCOMING MOVIE', url='https://telegram.me/hd_telegram_movies')]]))
-                await asyncio.sleep(20)
+                l = await message.reply_text(text=f"**Hello {message.from_user.first_name}😎. \n\n`{search}` Movie Not Found in Database\n\nPlease Check Your Spelling On Google & Try Again ✅ \n\nor Request Your movie will be uploaded some time \n\n Join the {search} Upload Notify channel to get movie upload notifications.**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('{search} Upload Notify', url='https://telegram.me/hd_telegram_movies')]]),
+                InlineKeyboardMarkup([[InlineKeyboardButton('ʀᴇQᴜᴇꜱᴛ ᴍᴏᴠɪᴇ', url='https://telegram.me/mxmoder_bot')]])
+                ),(
+                    InlineKeyboardMarkup([[InlineKeyboardButton("❣️ᴛʜᴀɴᴋ ʏᴏᴜ {message.from_user.first_name}❣️", callback_data="close_data")]]))
+                await asyncio.sleep(10)
                 await l.delete()
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
