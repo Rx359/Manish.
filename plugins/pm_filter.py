@@ -1998,8 +1998,8 @@ async def auto_filter(client, msg, spoll=False):
             settings = await get_settings(message.chat.id)
             if not files:
                 await client.send_message(req_channel, f"#REQUESTERS_LOGS \n\n**CONTENT NAME:**`{search}`\n**REQUESTED BY :** {message.from_user.first_name}\n**USER ID :**{message.from_user.id}", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🌺 Mark as Done 🏵️", callback_data="close_data")]]))
-                l = await message.reply_text(text=f"**Hello {message.from_user.first_name}😎. \n\n`{search}` Movie Not Found in Database\n\nPlease Check Your Spelling On Google & Try Again ✅ \n\nYour Request movie send to admin will be uploaded some time \n\n Join a Upload Notify channel to get movie upload notifications.\n\n   ❣️ᴛʜᴀɴᴋ ʏᴏᴜ {message.from_user.first_name} ❣️**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('{search} Upload Notify', url='https://telegram.me/hd_telegram_movies')]]))
-                 await asyncio.sleep(20)
+                l = await message.reply_text(text=f"**Hello {message.from_user.first_name}😎. \n\n`{search}` Movie Not Found in Database\n\nPlease Check Your Spelling On Google & Try Again ✅ \n\nYour Request movie send admin will be uploaded some time please wait\n\n Join a 𝗨𝗣𝗟𝗢𝗔𝗗 𝗡𝗢𝗧𝗜𝗙𝗬 channel to get movie upload notifications You.\n\n   ❣️ᴛʜᴀɴᴋ ʏᴏᴜ {message.from_user.first_name} ❣️**",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('𝗨𝗣𝗟𝗢𝗔𝗗 𝗡𝗢𝗧𝗜𝗙𝗬', url='https://telegram.me/hd_telegram_movies')]]))
+                await asyncio.sleep(20)
                  await l.delete()
                 if settings["spell_check"]:
                     return await advantage_spell_chok(client, msg)
