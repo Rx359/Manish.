@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://auto-ph0h.onrender.com/".format(FQDN)
+    URL = "https://wandering-lula-ankitabot09.koyeb.app/".format(FQDN)
 else:
-    URL = "https://auto-ph0h.onrender.com/".format(FQDN)
+    URL = "https://wandering-lula-ankitabot09.koyeb.app/".format(FQDN)
 
 
 
